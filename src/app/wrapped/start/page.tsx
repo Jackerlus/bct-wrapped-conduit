@@ -38,30 +38,26 @@ export default function Wrapped() {
   }
 
   return (
-    <main className="font-sans text-base root m-10 min-h-screen justify-items-center">
-      <div className="grid justify-items-center">
-        <h1 className="m-5 mt-2 text-4xl">BCT Wrapped</h1>
-        <h2 className="text-2xl">Season {season}</h2>
-        <div className="grid justify-items-center m-10">
-          <Space wrap direction="vertical" size={16}>
-            <Avatar size={128} icon={<UserOutlined />} />
-            <p className="text-xl">
-              {userId ? `${userId}` : "userId"} -
-              {teamName ? ` ${teamName}` : "teamName"}
-            </p>
-            <Button
-              type="primary"
-              size="large"
-              style={{
-                backgroundColor: colour,
-              }}
-              onClick={startWrapped}
-            >
-              GET YOUR WRAPPED!
-            </Button>
-          </Space>
-        </div>
+    <div className="text-base grid justify-items-center m-10">
+      <h1 className="m-5 mt-2 text-4xl">BCT Wrapped</h1>
+      <h2 className="text-2xl">Season {season}</h2>
+      <div className="m-5 flex flex-col items-center justify-center space-y-6">
+        <Avatar size={128} className="" icon={<UserOutlined />} />
+        <p className="text-xl">
+          {userId ? `${userId}` : "userId"} -
+          {teamName ? ` ${teamName}` : "teamName"}
+        </p>
+        <Button
+          type="primary"
+          size="large"
+          style={{
+            backgroundColor: colour,
+          }}
+          onClick={startWrapped}
+        >
+          GET YOUR WRAPPED!
+        </Button>
       </div>
-    </main>
+    </div>
   );
 }

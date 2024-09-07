@@ -9,14 +9,14 @@ export default function Home() {
       <Link
         id="card-6"
         href="wrapped/start?season=6"
-        className="flex items-center w-56 h-80 bg-orange-600 text-center m-20 rounded-lg"
+        className="flex items-center w-56 h-80 bg-orange-600 text-center m-20 rounded-lg no-underline"
       >
         <p className="text-center w-full text-5xl">6</p>
       </Link>
       <Link
         id="card-7"
         href="wrapped/start?season=7"
-        className="flex items-center w-56 h-80 bg-purple-600 text-center m-20 rounded-lg"
+        className="flex items-center w-56 h-80 bg-purple-600 text-center m-20 rounded-lg no-underline"
       >
         <p className="text-center w-full text-5xl">7</p>
       </Link>
